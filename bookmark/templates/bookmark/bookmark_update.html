@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    북마크 수정
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>북마크 수정</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">수정</button>
+    </form>
+
+{% endblock %}
+
