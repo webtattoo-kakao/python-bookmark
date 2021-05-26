@@ -45,4 +45,7 @@ class BookmarkDeleteView(DeleteView):
     success_url = reverse_lazy('bookmark:list')
 
 
+def info(request):
+    return render(request, "bookmark/bookmark_info.html", {
+    })
 
